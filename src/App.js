@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, {Component} from 'react'
+import "bootstrap/dist/css/bootstrap.min.css"
 import axios from 'axios'
+import Account from './img/user (1).png'
 class App extends Component {
     //pasar todos los campos para el form sign in
     constructor(){
@@ -71,9 +72,10 @@ class App extends Component {
 
     render() { 
         return (
-            <div className='justify-content-center container text-center'>
+            <div className='justify-content-center container text-center mt-3'>
                 <div className='container d-flex justify-content-center flex-column align-items-center'>
                     <h1>Sign in</h1>
+                    <img src={Account} alt='Sign-in' style={{width:'70px'}} className='m-2'/>
                     <div className='form-div' style={{width:'400px'}}>
                         <form onSubmit={this.onSubmit}>
                             {/*The onChange event in React detects when the value of an input element changes.*/}
